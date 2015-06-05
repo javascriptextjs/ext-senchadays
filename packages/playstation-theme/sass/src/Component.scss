@@ -1,0 +1,153 @@
+@import '_fonts';
+@import '_mixins';
+
+body {
+    font-family: 'sarilight';
+    text-transform: uppercase;
+    
+    &.x-body {
+        position: fixed;
+    }
+
+    &.x-body:before {
+        background: url('bg_psn2.jpg') transparent 50% 50%;
+        background-attachment: fixed;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        content: "";
+        -webkit-animation: play 12s steps(600) infinite;
+        animation: play 12s steps(600) infinite;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+body.x-border-layout-ct,
+div.x-border-layout-ct,
+.x-dashboard-body,
+.x-toolbar-default {
+    background-color: transparent;
+    @include filter(blur(0));
+}
+
+/*
+ * GAMESLIDER
+ */
+.gamesliderroot {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 30px 0 0;
+
+    .game {
+        margin: 30px 1px 20px;
+
+        &:after, &:before {
+            content: "";
+            height: 3px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+            display: block;
+            margin-bottom: -1px;
+            margin-top: -5px;
+        }
+
+        img {
+            background: lighten(#000, 10%);
+            border: 1px solid #000;
+        }
+
+        h3 {
+            position: fixed;
+            top: 220px;
+            left: 0;
+            z-index: 1;
+        }
+    }
+
+    .game.x-view-item-focused {
+        outline: none !important;
+
+        img {
+            border: 1px solid #fff;
+            -webkit-box-shadow: -1px 2px 28px 5px $glow;
+            -moz-box-shadow: -1px 2px 28px 5px $glow;
+            box-shadow: -1px 2px 28px 5px $glow;
+        }
+    }
+}
+
+/*
+ * GAME EXTRAS
+ */
+#extra {
+
+   display: block;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: show;
+
+
+    background: rgba(15, 63, 107, 1);
+    background: -moz-linear-gradient(top, rgba(15, 63, 107, 1) 0%, rgba(15, 15, 15, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(15, 63, 107, 1)), color-stop(100%, rgba(15, 15, 15, 1)));
+    background: -webkit-linear-gradient(top, rgba(15, 63, 107, 1) 0%, rgba(15, 15, 15, 1) 100%);
+    background: -o-linear-gradient(top, rgba(15, 63, 107, 1) 0%, rgba(15, 15, 15, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(15, 63, 107, 1) 0%, rgba(15, 15, 15, 1) 100%);
+    background: linear-gradient(to bottom, rgba(15, 63, 107, 1) 0%, rgba(15, 15, 15, 1) 100%);
+    border: 1px solid #000;
+    -webkit-box-shadow: -1px 5px 28px 5px darken($glow, 50%);
+    -moz-box-shadow: -1px 5px 28px 5px darken($glow, 50%);
+    box-shadow: -1px 5px 28px 5px darken($glow, 50%);
+    color: #fff;
+    font-weight: bold;
+    
+    margin: 0;
+
+    &.x-item-disabled {
+        display: none;
+    }
+
+    ul,
+    span.progress,
+    span.platformslider {
+        border-bottom: 1px solid darken($glow, 10%);
+        display: block;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 2px 10px;
+
+        li {
+            display: inline-block;
+            height: 38px;
+            padding: 15px 21px;
+
+            &.bronze {
+                background: url('bronze.png') 0 50% no-repeat;
+            }
+            
+            &.silver {
+                background: url('silver.png') 0 50% no-repeat;
+            }
+
+            &.gold {
+                background: url('gold.png') 0 50% no-repeat;
+            }
+
+            &.platinum {
+                background: url('platinum.png') 0 50% no-repeat;
+            }
+        }
+
+        .trophies {
+            font-family: 'Helvetica';
+        }
+    }
+}

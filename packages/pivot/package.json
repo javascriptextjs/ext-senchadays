@@ -1,0 +1,43 @@
+{
+  "name": "pivot",
+  "format": "1",
+  "version": "6.0.0.415",
+  "compatVersion": "6.0.0",
+  "creator": "Sencha",
+  "summary": "Sencha Pivot",
+  "detailedDescription": "Pivot components",
+  "type": "code",
+  "requires": [
+    "exporter",
+    "ux"
+  ],
+  "slicer": {
+    "js": [
+      {
+        "path": "${package.dir}/sass/example/custom.js",
+        "isWidgetManifest": true
+      }
+    ]
+  },
+  "builds": {
+    "neptune": {
+      "framework": "ext",
+      "theme": "ext-theme-neptune"
+    },
+    "crisp": {
+      "framework": "ext",
+      "theme": "ext-theme-crisp"
+    },
+    "classic": {
+      "framework": "ext",
+      "theme": "ext-theme-classic"
+    }
+  },
+  "output": {
+    "base": "${package.dir}/build/${build.id}",
+    "js": "..",
+    "sass": ""
+  },
+  "toolkit": "classic",
+  "framework": "ext"
+}

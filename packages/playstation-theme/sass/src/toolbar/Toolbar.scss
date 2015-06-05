@@ -1,0 +1,75 @@
+/*
+ * Ext.toolbar.Toolbar
+ */
+.x-toolbar {
+    color: #fff;
+    font-size: 18px;
+    padding: 0 25px;
+   
+    &:after {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #fff 50%, rgba(0, 0, 0, 0) 100%);
+        content: "";
+        display: block;
+        height: 2px;
+        margin-top: 20px;
+    }
+
+    .trophies, .bronze, .silver, .gold, .platinum {
+        font-family: 'Helvetica';
+    }
+
+    .x-btn, .x-btn.x-btn-pressed.x-btn-default-toolbar-large {
+        background: none;
+        border: none;
+        -webkit-box-shadow: none !important; 
+        box-shadow: none !important;
+        color: #fff;
+        font-size: 24px;
+        text-transform: lowercase;
+
+        cursor: default; //TODO create handlers for these butttons
+        &.info.x-btn-over,
+        &.shop.x-btn-over {
+            color: $glow !important;
+        }
+
+
+        &.trophies {
+            cursor: default;
+        }
+        &.username {
+            cursor: default;
+        }
+
+        span {
+            color: #fff;
+        }
+    }
+
+    span.total,
+    span.bronze,
+    span.silver,
+    span.gold,
+    span.platinum {
+        background-position: 100% 0;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 15px;
+        height: 21px;
+        line-height: 25px;
+        padding-left: 25px;
+    }
+
+    span.bronze {
+        background: url('bronze.png') no-repeat;
+    }
+    span.silver {
+        background: url('silver.png') no-repeat;
+    }
+    span.gold {
+        background: url('gold.png') no-repeat;
+    }
+    span.platinum {
+        background: url('platinum.png') no-repeat;
+    }
+}

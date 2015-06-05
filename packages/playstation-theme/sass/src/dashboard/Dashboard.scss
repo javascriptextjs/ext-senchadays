@@ -1,0 +1,28 @@
+/* 
+ * Ext.dashboard.Dashboard
+ */
+.x-dashboard-panel {
+    .x-panel-body-default {
+        background: none;
+
+        > .x-component {
+            background: rgba(255, 255, 255, 0.9);
+        }
+    }
+}
+
+.x-dashboard-googlerss-detail {
+    background: none;
+    line-height: 22px;
+    padding: 0 10px 10px 10px;
+    text-transform: initial;
+    
+    h2 {
+        color: $glow;
+        font-size: 18px;
+    }
+}
+
+.x-dashboard-googlerss-glyph {
+    font-size: 14px;
+}

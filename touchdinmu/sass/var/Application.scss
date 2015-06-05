@@ -1,0 +1,11 @@
+$black: #494949;
+$base-color: lighten(black, 30%);
+$alternative-color: lighten(#494949, 5%);
+$alert-color: #B0886D;
+$confirm-color: #FFA500;
+$active-color: darken($base-color, 1%);
+ 
+// GRADIENTS
+$base-gradient: 'none';
+$page-bg-color: -webkit-linear-gradient(bottom, darken(white, 15%) 11%, rgb(255,255,255) 100%);
+$form-bg-color: -webkit-linear-gradient(top, darken(white, 15%) 11%, rgb(255,255,255) 100%);

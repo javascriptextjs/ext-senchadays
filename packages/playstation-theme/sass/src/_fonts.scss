@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'sarilight';
+    src: url('fonts/sari-light-webfont.eot');
+    src: url('fonts/sari-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sari-light-webfont.woff2') format('woff2'),
+         url('fonts/sari-light-webfont.woff') format('woff'),
+         url('fonts/sari-light-webfont.ttf') format('truetype'),
+         url('fonts/sari-light-webfont.svg#sarilight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'playstation';
+	src:url('fonts/playstation.eot?-1rt7cq');
+	src:url('fonts/playstation.eot?#iefix-1rt7cq') format('embedded-opentype'),
+		url('fonts/playstation.woff?-1rt7cq') format('woff'),
+		url('fonts/playstation.ttf?-1rt7cq') format('truetype'),
+		url('fonts/playstation.svg?-1rt7cq#playstation') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

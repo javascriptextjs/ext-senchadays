@@ -1,0 +1,49 @@
+@import 'compass/css3/filter';
+
+@mixin cssfilter($filter-type, $filter-amount) {
+    -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+    -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+    -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+    -o-filter: $filter-type+unquote('(#{$filter-amount})');
+    filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+@-webkit-keyframes play {
+    0% {
+        @include filter(blur(0));
+        @include cssfilter(hue-rotate, 0deg);
+    }
+    10% {
+        @include filter(blur(0));
+        @include cssfilter(hue-rotate, 0deg);
+    }
+    50% {
+        @include filter(blur(30px));
+        @include cssfilter(hue-rotate, 90deg);
+    }
+    90% {
+        @include filter(blur(0));
+        @include cssfilter(hue-rotate, 0deg);
+    }
+    100% {
+        @include filter(blur(0));
+        @include cssfilter(hue-rotate, 0deg);
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        display:none; 
+        opacity: 0;
+    }
+
+    1% {
+        display: block ; 
+        opacity: 0;
+    }
+
+    100% {
+        display: block ; 
+        opacity: 1;
+    }
+}

@@ -1,0 +1,61 @@
+//my own variables
+$dark-bg: #060707;
+$dark-bg2: #1F2022;
+$dark-bg3: #222326;
+$dark-bg4: darken(#88898C, 15%);
+
+$front-color: #fff;
+
+$highlight-color: #669005;
+$highlight-color2:  #AACE29;
+
+//global sencha vars
+$base-color: $dark-bg !dynamic;
+//$base-color: multiply(red, blue) !dynamic; //TODO
+
+$body-background-color: lighten($dark-bg, 12%) !dynamic;
+$color: $front-color !dynamic;
+$enable-font-smoothing: true !dynamic;
+
+//component vars
+$panel-body-background-color : $dark-bg2 !dynamic;
+$panel_frame_background_color: $dark-bg2 !dynamic;
+$toolbar_background_color: $dark-bg !dynamic;
+
+$tab_base_color_active: $highlight-color !dynamic;
+$tab_base_color_over: $highlight-color2!dynamic;
+
+$form-field-background-color: $dark-bg4 !dynamic;
+$form-field-border-width: 0 !dynamic;
+$html-editor-border-color: transparent !dynamic;
+$fieldset-border-color: $dark-bg !dynamic;
+
+$button-toolbar-background-color: $dark-bg !dynamic;
+$button-toolbar-background-color-over: $highlight-color !dynamic;
+$button-toolbar-background-gradient: 'none' !dynamic;
+$button-toolbar-background-gradient-over: 'none' !dynamic;
+$button-toolbar-background-gradient-pressed: 'none' !dynamic;
+$button-toolbar-background-color-pressed: $highlight-color !dynamic;
+$button-toolbar-color-pressed: $front-color !dynamic;
+$button-toolbar-color-over: $front-color !dynamic;
+$button-toolbar-border-color: $dark-bg !dynamic;
+
+$accordion-background-color: $dark-bg !dynamic;
+$accordion-header-over-background-color: $highlight-color !dynamic;
+$accordion-header-background-color: $dark-bg3 !dynamic;
+$accordion-header-color: $front-color !dynamic;
+
+$menu-background-color: $dark-bg !dynamic;
+$menu-border-color: $dark-bg4 !dynamic;
+$menu-text-color: $front-color!dynamic;
+$menu-separator-border-color: $dark-bg !dynamic;
+
+
+
+
+//TODO it would be nicer when the Sencha Inspector variable names, are clickable
+//and open the sencha cell editor. so its easy to copy the value to a stylesheet
+
+//TODO the names in the grid have underscores, but in the code these are dashes
+
+//color picker suddenly wont work.

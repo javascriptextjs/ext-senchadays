@@ -1,0 +1,133 @@
+.x-tabbar .x-tab {
+    .x-button-icon {
+        text-align: center;
+        &:before {
+            font-family: FontAwesome;
+            font-size: 1.2em;
+            line-height: 1.2em;
+            vertical-align: middle;
+        }
+    }
+
+    &.x-tab-icon .x-button-label {
+        padding: 0;
+        top: 0;
+        vertical-align: middle;
+    }
+}
+
+
+@keyframes x-loading-spinner-rotate {
+    0%{     transform: rotate(0deg);   }
+    8.32%{  transform: rotate(0deg);   }
+
+    8.33%{  transform: rotate(30deg);  }
+    16.65%{ transform: rotate(30deg);  }
+
+    16.66%{ transform: rotate(60deg);  }
+    24.99%{ transform: rotate(60deg);  }
+
+    25%{    transform: rotate(90deg);  }
+    33.32%{ transform: rotate(90deg);  }
+
+    33.33%{ transform: rotate(120deg); }
+    41.65%{ transform: rotate(120deg); }
+
+    41.66%{ transform: rotate(150deg); }
+    49.99%{ transform: rotate(150deg); }
+
+    50%{    transform: rotate(180deg); }
+    58.32%{ transform: rotate(180deg); }
+
+    58.33%{ transform: rotate(210deg); }
+    66.65%{ transform: rotate(210deg); }
+
+    66.66%{ transform: rotate(240deg); }
+    74.99%{ transform: rotate(240deg); }
+
+    75%{    transform: rotate(270deg); }
+    83.32%{ transform: rotate(270deg); }
+
+    83.33%{ transform: rotate(300deg); }
+    91.65%{ transform: rotate(300deg); }
+
+    91.66%{ transform: rotate(330deg); }
+    100%{   transform: rotate(330deg); }
+}
+
+@include sencha-toolbar-ui('light', #f2f2f2, 'bevel');
+
+body {
+    font-size: 62.5%;
+    font-family: HelveticaNeue-Light, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 1px #ffffff;
+}
+
+.x-form-label span {
+    letter-spacing: 1px;
+    font: {
+        family: HelveticaNeue-Light, Helvetica, sans-serif;
+    }
+}
+
+.title {
+    .x-title {
+        font: {
+            family: "Lobster";
+            size: 1.2em;
+        }
+        line-height: 2.5em;
+        text-shadow: none;
+        letter-spacing: -1px;
+    }
+}
+
+.x-mask-message,
+.x-button {
+    text-shadow: none;
+    letter-spacing: -1px;       
+}
+
+.x-form-fieldset-title {
+    font: {
+        family: "Lobster";
+        size: 1.2em;
+    }
+    letter-spacing: -1px;
+}
+
+.footer {
+    padding: 12px;
+    text-align: right;
+    letter-spacing: 0;
+    font: {
+        family: "Lobster";
+        size: 0.5em;
+    }
+    a {
+        color :#000;
+    }
+}
+
+.textview {
+    color: black;
+    font: {
+        family: "Oswald";
+        size: 1.8em;
+    }
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    padding: 1em;
+    text-transform: uppercase;
+
+    .yes {
+        color: $confirm-color;
+    }
+    .no {
+        color: $confirm-color;
+    }
+    .temp {
+        color: $confirm-color;
+    }
+}
